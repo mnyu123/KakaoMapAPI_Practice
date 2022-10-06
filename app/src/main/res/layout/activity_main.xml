@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/half_view"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
@@ -9,6 +10,23 @@
     <RelativeLayout
         android:id="@+id/map_view"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="414dp"
+        android:layout_height="212dp"
+        android:background="@color/teal_200"
+        android:listSelector="@drawable/ic_launcher_background"
+        android:scrollbarThumbHorizontal="@drawable/ic_launcher_background"
+        android:scrollbarThumbVertical="@android:drawable/button_onoff_indicator_on"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="2dp"
+        tools:visibility="visible">
+
+    </ListView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

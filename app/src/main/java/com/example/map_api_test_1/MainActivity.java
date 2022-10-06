@@ -1,14 +1,22 @@
 package com.example.map_api_test_1;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.ListAdapter;
 
 import android.os.Bundle;
+import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 
+import net.daum.mf.map.api.MapPOIItem;
 import net.daum.mf.map.api.MapPoint;
 import net.daum.mf.map.api.MapView;
 
 public class MainActivity extends AppCompatActivity {
+
+    static final String[] List_Menu = {"리스트1","리스트2","리스트2","리스트2","리스트2","리스트2","리스트2","리스트2","리스트2","리스트2","리스트2","리스트2"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,11 +29,37 @@ public class MainActivity extends AppCompatActivity {
         mapViewContainer.addView(mapView);
 
         mapView.setMapCenterPoint(MapPoint.mapPointWithGeoCoord(35.9646389,126.9595793),true); // 원대병원을 중심으로 나오게
-        
+
+
+        MapPoint mapPoint = MapPoint.mapPointWithGeoCoord(35.9646389,126.9595793);
+
+        MapPOIItem marker = new MapPOIItem();
+        marker.setItemName("선별진료소 1");
+        marker.setTag(0);
+        marker.setMapPoint(mapPoint);
+        marker.setMarkerType(MapPOIItem.MarkerType.BluePin);
+        marker.setSelectedMarkerType(MapPOIItem.MarkerType.YellowPin);
+
+        mapView.addPOIItem(marker);
+
+        //----------------------------------------------------------------------
+        ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1,List_Menu);
+
+        ListView listview = (ListView) findViewById(R.id.list_view);
+        listview.setAdapter(adapter);
+
+        listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView parent, View v, int position, long id) {
+                String strText = (String) parent.getItemAtPosition(position);
+            }
+            //
+        });
+
+
+
+
+
 
     }
-
-
-
-
 }
