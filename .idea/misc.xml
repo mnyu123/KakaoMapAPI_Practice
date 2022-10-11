@@ -3,6 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/whdud/AndroidStudioProjects/Map_api_Test_retry/app/src/main/res/drawable/button_icon_xml.xml" value="0.1715" />
+        <entry key="..\:/Users/whdud/AndroidStudioProjects/Map_api_Test_retry/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
+        <entry key="..\:/Users/whdud/AndroidStudioProjects/Map_api_Test_retry/app/src/main/res/layout/activity_main.xml" value="0.1778115501519757" />
+        <entry key="..\:/Users/whdud/AndroidStudioProjects/Map_api_Test_retry/app/src/main/res/layout/activity_sub.xml" value="0.1778115501519757" />
         <entry key="..\:/Users/whdud/Desktop/Map_api_Test_1/app/src/main/res/layout/activity_main.xml" value="0.29583333333333334" />
         <entry key="..\:/Users/whdud/Desktop/Map_api_Test_1/app/src/main/res/layout/activity_sub.xml" value="0.10648148148148148" />
       </map>
