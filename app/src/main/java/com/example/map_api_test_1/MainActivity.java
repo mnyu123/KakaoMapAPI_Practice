@@ -17,6 +17,8 @@ import net.daum.mf.map.api.MapView;
 public class MainActivity extends AppCompatActivity {
 
     static final String[] List_Menu = {"리스트1","리스트2","리스트2","리스트2","리스트2","리스트2","리스트2","리스트2","리스트2","리스트2"};
+    static final double[] point1 = {35.9646389,35.8646389,35.7646389,35.6646389,35.5646389,35.4646389};
+    static final double[] point2 = {126.9595793,126.8595793,126.7595793,126.6595793,126.5595793,126.4595793};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,9 +35,9 @@ public class MainActivity extends AppCompatActivity {
         //좌표를 리스트에 넣고
         //리스트 불러와서 반복문 집어넣음
 
-        for(int i =0; i<10 ;i++)
+        for(int i =0; i<6 ;i++)
         {
-            MapPoint mapPoint = MapPoint.mapPointWithGeoCoord(35.9646389,126.9595793);
+            MapPoint mapPoint = MapPoint.mapPointWithGeoCoord(point1[i],point2[i]);
             for(int j =0; j<10; j++){
                 MapPOIItem marker = new MapPOIItem();
                 marker.setItemName("선별진료소 1");
