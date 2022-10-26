@@ -19,14 +19,16 @@
         android:id="@+id/list_view"
         android:layout_width="414dp"
         android:layout_height="212dp"
-        android:background="@color/teal_200"
-        android:listSelector="@drawable/ic_launcher_background"
-        android:scrollbarThumbHorizontal="@drawable/ic_launcher_background"
-        android:scrollbarThumbVertical="@android:drawable/button_onoff_indicator_on"
+        android:background="@android:color/holo_blue_dark"
+        android:listSelector="@android:color/system_neutral2_600"
+        android:scrollbarThumbHorizontal="@color/material_dynamic_primary70"
+        android:scrollbarThumbVertical="@color/material_dynamic_tertiary95"
         app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteX="-3dp"
         tools:visibility="visible">
 
     </ListView>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
