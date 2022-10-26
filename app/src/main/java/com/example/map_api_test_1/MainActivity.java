@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
                 marker.setSelectedMarkerType(MapPOIItem.MarkerType.YellowPin);
 
                 mapView.addPOIItem(marker);
-
+//
 
                 List_Menu[j] = "션별진료소" + j;
             }
